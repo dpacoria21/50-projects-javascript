@@ -33,4 +33,3 @@ prev.addEventListener('click', () => {
     activatedButtons(position);
     numbers[4-position].classList.remove('isActive');
 });
-

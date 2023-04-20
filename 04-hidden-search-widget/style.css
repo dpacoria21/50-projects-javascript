@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #e65398;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-search {
+    position: relative;
+    width: 280px;
+    margin: 0px 20px;
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    transition: .5s linear;
+    
+}
+
+.hidden {
+    width: 0;
+}
+
+.search-text {
+    width: calc(100% - 50px);
+    height: 100%;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.lupa {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+}

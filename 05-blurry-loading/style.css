@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./goku.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: 1.5s linear; */
+    filter: blur(10px);
+}
+
+.percent {
+    position: absolute;
+    top: calc(50% - 37.5px);
+    left: calc(50% - 37.5px);
+    font-size: 75px;
+    color: #fff;
+    opacity: 1;
+}

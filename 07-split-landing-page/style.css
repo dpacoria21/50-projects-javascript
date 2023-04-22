@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     transition: 1s ease-in-out;
     overflow: hidden;
 }
@@ -88,11 +89,17 @@ body {
     padding: 25px 80px;
     background: transparent;
     transition: .5s linear;
+    cursor: pointer;
 }
 
-.buy-now:hover {
-    border: 4px solid #78a2e9;
-    background: #78a2e9;
+.side-left .buy-now:hover {
+    border: 4px solid #4645ff;
+    background: #4645ff;
+}
+
+.side-right .buy-now:hover {
+    border: 4px solid #449b32;
+    background: #449b32;
 }
 
 @media (max-width: 800px) {

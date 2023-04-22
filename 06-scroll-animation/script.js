@@ -3,8 +3,6 @@ const container = document.querySelector('.container');
 
 window.addEventListener('scroll', () => {
 
-    
-    
     let side = '';
     let hiddenSide = true;
     

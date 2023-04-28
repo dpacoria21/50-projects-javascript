@@ -1,10 +1,8 @@
 const inputs = document.querySelectorAll('.form-input');
-
 const letters = document.querySelectorAll('.placeholder');
 
-
-
 inputs.forEach((input, i) => {
+
     const label = letters[i].querySelectorAll('p');
     input.addEventListener('focus', (e) => {
         e.preventDefault();
@@ -15,11 +13,11 @@ inputs.forEach((input, i) => {
                 setTimeout(() => {
                     letter.style.transform = ``;
                     letter.classList.add('elevate-placeholder');
-                },90);
+                }, 90);
 
                 input.style.borderBottom = `2px solid #769bf0`;
             }, (100 * (i + 1)))
-        })
+        });
     });
 
     input.addEventListener('blur', (e) => {
@@ -36,6 +34,7 @@ inputs.forEach((input, i) => {
                     input.style.borderBottom = `2px solid #fff`;
                 }, 90)
             }, 100 * (i + 1));
-        })
-    })
+        });
+    });
+
 })

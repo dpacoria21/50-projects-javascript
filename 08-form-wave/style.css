@@ -60,12 +60,8 @@ body {
     transition: .1s ease-in-out;
 }
 
-/* .form-input:focus + .placeholder, .form-input:valid + .placeholder{
-    transform: translateY(-30px);
-} */
-
 .placeholder p {
-    transition: .1s ease-in-out;
+    transition: .2s ease;
 }
 
 .elevate-placeholder {
@@ -74,4 +70,3 @@ body {
     /* transform: translateY(5px); */
     color: #769bf0;
 }
-

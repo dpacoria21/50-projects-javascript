@@ -106,6 +106,8 @@ body {
     }
 }
 
+
+
 .list {
     position: absolute;
     padding-right: 40px;
@@ -128,4 +130,17 @@ body {
 .list-link {
     text-decoration: none;
     padding: 10px;
+}
+
+.girarY {
+    animation: openList 1s linear;
+}
+
+@keyframes openList {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }

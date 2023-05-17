@@ -5,8 +5,14 @@ const list = document.querySelector('.list');
 
 const container = document.querySelector('.container');
 const containerButton = document.querySelector('.container-button');
+const listas = document.querySelectorAll('li');
+console.log(listas);
 
 containerButton.addEventListener('click', () => {
+
+    listas.forEach((l) => {
+        l.classList.toggle('girarY');
+    })
 
     if (!container.classList.contains('show-list')) {
         lineUp.classList.toggle('girar-up');

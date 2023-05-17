@@ -9,7 +9,7 @@ counters.forEach((counter, i) => {
             clearInterval(count);
         } 
         counter.textContent = time;
-        time+=10;
+        time+=20;
     }, 1)
 })
 

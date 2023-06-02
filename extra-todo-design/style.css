@@ -50,6 +50,7 @@ body {
     padding: 25px;
     height: 28%;
     border-radius: 0px 0px 7px 7px;
+    transition: .4s linear;
     display: flex;
     align-items: center;
     justify-content: space-between;

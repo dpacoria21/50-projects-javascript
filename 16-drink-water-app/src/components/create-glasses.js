@@ -5,7 +5,10 @@ export const createGlasses = (container) => {
         html += `
             <div class="bottle mini center" data-index="${i+1}">
                 <p>
-                    125ml
+                    125
+                </p>
+                <p>
+                    ml
                 </p>
             </div>
         `;

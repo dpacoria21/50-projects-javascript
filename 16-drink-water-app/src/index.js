@@ -11,8 +11,13 @@ document.querySelector('#app').innerHTML = `
     <div class="bottle-container">
       
     </div>
+
+    <p class="subtitle">Select how many glasses of water that you have drank</p>
+
     <div class="glasses-container">
     </div>
+
+
   </main>
 `;
 const bottle = document.querySelector('.bottle-container');

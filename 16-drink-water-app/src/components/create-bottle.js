@@ -5,7 +5,8 @@ export const createBottle = (container) => {
 
     bottle.innerHTML = `
         <div class="half-empty center">
-            <p> 100% </p> 
+            <p> 1L </p> 
+            <p> remained <p>
         </div>
         <div class="half-fit center">
             <p> 0% </p> 

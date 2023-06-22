@@ -18,7 +18,7 @@ export const fitBottle = (containerBottle, containerGlasses) => {
     const cantidadEmpty = 1000-cantidad;
 
     halfEmpty.style.height = `${(cantidadEmpty)/10}%`;
-    halfEmpty.textContent = `${cantidadEmpty/10}%`;
+    halfEmpty.innerHTML = `<p>${cantidadEmpty/1000}L</p><p>remained</p>`;
 
     halfFit.style.height = `${cantidad/10}%`;
     halfFit.textContent = `${cantidad/10}%`;

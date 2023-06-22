@@ -5,10 +5,10 @@ export const createBottle = (container) => {
 
     bottle.innerHTML = `
         <div class="half-empty center">
-            <p> 50% </p> 
+            <p> 100% </p> 
         </div>
         <div class="half-fit center">
-            <p> 50% </p> 
+            <p> 0% </p> 
         </div>
     `;
 

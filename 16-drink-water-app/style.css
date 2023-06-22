@@ -7,10 +7,28 @@
 body {
   width: 100%;
   height: 100%;
-  background: #5192f4;
+  background: #6394dc;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #353535;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 main {
@@ -21,9 +39,9 @@ main {
 }
 
 .bottle {
-  width: 175px;
-  height: 350px;
-  border: 3px solid #1545f8;
+  width: 185px;
+  height: 320px;
+  border: 3px solid #3e62e7;
   border-radius: 0 0 45px 45px;
   background: #fff;
   display: flex;
@@ -34,19 +52,29 @@ main {
 .mini {
   max-width: 70px;
   width: 100%;
-  height: 150px;
+  height: 125px;
+  border-radius: 0 0 22px 22px;
+}
+
+.fit {
+  background-color: #5192f4;
 }
 
 .half-empty {
   width: 100%;
-  height: 50%;
+  height: 100%;
   background: transparent;
+  transition: .5s linear;
+  overflow: hidden;
 }
 
 .half-fit {
+  transform-origin: bottom;
   width: 100%;
-  height: 50%;
+  height: 0%;
   background: #91e5f8;
+  transition: .5s linear;
+  overflow: hidden;
 }
 
 .center {

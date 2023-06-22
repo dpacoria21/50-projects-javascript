@@ -1,5 +1,6 @@
 import './components/index';
 import {createBottle, createGlasses} from  './components/index';
+import {fitGlasses, fitBottle} from './helpers';
 
 document.querySelector('#app').innerHTML = `
   <header>
@@ -19,3 +20,23 @@ createBottle(bottle);
 
 const glasses = document.querySelector('.glasses-container');
 createGlasses(glasses);
+
+const allGlasses = document.querySelectorAll('.mini');
+
+allGlasses.forEach((glass) => {
+  let isActive = false;
+  glass.addEventListener('click', () => {
+
+    const index = glass.getAttribute('data-index');
+    if(glass.classList.contains('fit')===true && Boolean(allGlasses[index]?.classList.contains('fit'))===false){
+      glass.classList.remove('fit');
+    }else {
+      fitGlasses(allGlasses, index);
+    }
+
+    fitBottle(bottle, glasses);
+    
+  })
+})
+
+

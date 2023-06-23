@@ -12,6 +12,7 @@ export const CardMovie = ({movie}) => {
                 <p className='card-subtitle'>Overview</p>
                 <p className='card-text'>{movie.overview}</p>
             </div>
+            
         </div>
     )
 }

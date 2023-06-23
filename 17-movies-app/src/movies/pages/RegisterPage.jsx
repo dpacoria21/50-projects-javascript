@@ -1,9 +1,11 @@
+import './RegisterPage.css';
+
 export const RegisterPage = () => {
     return (
-        <>
-        
-            <h1>Next Implementation...</h1>
-
-        </>
+        <div className="container-register">
+            <h1>
+                Next Implementation...
+            </h1>
+        </div>
     )
 }

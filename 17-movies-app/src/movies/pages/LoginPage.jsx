@@ -1,9 +1,11 @@
+import './LoginPage.css';
+
 export const LoginPage = () => {
     return (
-        <>
-        
-            <h1>Next Implementation...</h1>
-        
-        </>
+        <div className="container-login">
+            <h1>
+                Next Implementation...
+            </h1>
+        </div>
     )
 }

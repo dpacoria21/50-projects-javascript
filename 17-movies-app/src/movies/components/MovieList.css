@@ -6,3 +6,10 @@
     gap: 25px;
     padding: 25px;
 }
+
+.danger {
+    color: #d3d3d3;
+    background: #b40808;
+    padding: 20px;
+    border-radius: 25px;
+}

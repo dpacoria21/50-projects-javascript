@@ -17,6 +17,15 @@ export const MovieList = ({value = ''}) => {
                         <CardMovie key={movie.id} movie={movie}/>
                     ))
                 }
+
+                {
+                    movies.length === 0 ? (
+                        <>
+                            <h1 className="danger">No se encontraron peliculas con ese nombre</h1>
+                        </> 
+                    ): ''
+                }
+
             </div>
         
         </>

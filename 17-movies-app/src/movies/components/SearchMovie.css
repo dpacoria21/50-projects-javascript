@@ -1,0 +1,46 @@
+
+.container-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form {
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    z-index: 2;
+    color: white;
+    background: transparent;
+    height: 35px;
+    width: 100%;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    border: 3px solid rgba(63, 61, 172, 0.8);
+    border-radius: 30px;
+    height: 60px;
+    transition: .5s linear;
+}
+
+.input:focus {
+    box-shadow: 0 0 20px rgba(61, 59, 160, 0.8);
+}
+
+.bi-search {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+}
+

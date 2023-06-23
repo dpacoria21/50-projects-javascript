@@ -1,9 +1,7 @@
+import { MainPage } from "./movies/pages"
+
 export const App = () => {
     return (
-        <>
-        
-            <h1>Saludos</h1>
-        
-        </>
+        <MainPage />
     )
 }

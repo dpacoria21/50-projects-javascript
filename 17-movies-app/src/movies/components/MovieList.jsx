@@ -1,12 +1,11 @@
-import { useFetchMovies } from "../hooks/useFetchMovies"
+import { Link } from "react-router-dom";
+import { useFetchMovies } from "../hooks/useFetchMovies";
 import { CardMovie } from "./CardMovie";
-import './MovieList.css'
+import './MovieList.css';
 
 export const MovieList = ({value = ''}) => {
 
-    const {movies, searchMovies} = useFetchMovies();
-
-    searchMovies(value);
+    const {movies} = useFetchMovies(value);
 
     return (
         <>
@@ -14,7 +13,9 @@ export const MovieList = ({value = ''}) => {
             <div className="container-cards">
                 {
                     movies.map((movie) => (
-                        <CardMovie key={movie.id} movie={movie}/>
+                        <Link key={movie.id} to={`/movie/${movie.id}`}>
+                            <CardMovie movie={movie}/>
+                        </Link>
                     ))
                 }
 

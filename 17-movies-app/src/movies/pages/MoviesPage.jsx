@@ -5,7 +5,7 @@ import { SearchMovie } from '../components/SearchMovie';
 
 export const MoviesPage = () => {
 
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState();
 
     const onSearchMovie = (search = '') => {
         setValue(search);
